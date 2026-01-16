@@ -35,29 +35,33 @@ The project follows a **learning-by-building** approach with clean architecture 
 ---
 
 ## 🏗️ Project Architecture (Layered Flow)
-User
-│
-▼
-Streamlit UI (Frontend)
-│
-▼
-FastAPI Server (API Layer)
-│
-├── PDF Processing Layer
-│ └── Text extraction using PyPDF2
-│
-├── Metadata Extraction Layer
-│ └── LLM-based structured metadata extraction
-│
-├── Text Chunking Layer
-│ └── RecursiveCharacterTextSplitter
-│
-├── Summarization Layer
-│ ├── Map Step – chunk-level summaries
-│ └── Reduce Step – final academic summary
-│
-▼
-LLM Layer (Ollama – LLaMA 3)
+
+1. **User Interaction**
+   - Uploads PDF or text via UI
+
+2. **Streamlit UI (Frontend)**
+   - Accepts input
+   - Displays summaries and metadata
+
+3. **FastAPI Server (API Layer)**
+   - Handles requests
+   - Orchestrates processing pipeline
+
+4. **PDF Processing Layer**
+   - Extracts text using **PyPDF2**
+
+5. **Metadata Extraction Layer**
+   - Extracts title, authors, and key details using **LLM**
+
+6. **Text Chunking Layer**
+   - Splits text using **RecursiveCharacterTextSplitter**
+
+7. **Summarization Layer**
+   - **Map Step**: Chunk-level summaries
+   - **Reduce Step**: Final academic summary
+
+8. **LLM Layer**
+   - Local inference via **Ollama (LLaMA 3)**
 
 
 ---
@@ -75,34 +79,14 @@ This approach:
 
 ---
 
-## 📁 Project Structure
+**Screenshots of**:
 
-Glidecloud_Capstone_Project/
-│
-├── app/
-│ ├── server.py # FastAPI server
-│ ├── summarizer.py # Map-Reduce summarization logic
-│ ├── metadata_extractor.py # Metadata extraction using LLM
-│ ├── pdf_utils.py # PDF text extraction utilities
-│ ├── prompts.py # LLM prompts
-│
-├── ui/
-│ └── streamlit_app.py # Streamlit frontend
-│
-├── Screenshots/ # UI screenshots
-├── requirements.txt
-├── .gitignore
-└── README.md
-📸 Screenshots
-
-Screenshots of:
-
-Swagger API
-Streamlit Interface
-Summary Output
+-Swagger API
+-Streamlit Interface
+-Summary Output
 📁 Available inside the Screenshots/ directory.
 
-🧪 Example Workflow
+**🧪 Example Workflow**
 
 Upload a research paper (PDF)
 Extract first-page metadata
@@ -112,7 +96,7 @@ Merge summaries into final output (Reduce)
 Display results in UI
 
 
-🔮 Future Enhancements
+**🔮 Future Enhancements**
 
 Vector database integration (FAISS / Pinecone)
 Semantic search over documents

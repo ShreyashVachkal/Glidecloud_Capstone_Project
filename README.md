@@ -79,29 +79,32 @@ This approach:
 
 ---
 
-**Screenshots of**:
+## 📸 Screenshots
 
--Swagger API
--Streamlit Interface
--Summary Output
-📁 Available inside the Screenshots/ directory.
+The following screenshots are available inside the **`Screenshots/`** directory:
 
-**🧪 Example Workflow**
-
-Upload a research paper (PDF)
-Extract first-page metadata
-Chunk full document text
-Generate partial summaries (Map)
-Merge summaries into final output (Reduce)
-Display results in UI
+- Swagger API Interface
+- Streamlit User Interface
+- Generated Summary Output
 
 
-**🔮 Future Enhancements**
+## 🧪 Example Workflow
 
-Vector database integration (FAISS / Pinecone)
-Semantic search over documents
-Multi-document summarization
-Citation-aware summaries
-Authentication & user history
-Cloud deployment
+1. Upload a research paper (PDF) via the Streamlit UI
+2. Extract metadata from the first page of the document
+3. Process and chunk the full document text
+4. Generate partial summaries using the **Map** step
+5. Merge chunk-level summaries using the **Reduce** step
+6. Display the final summary and metadata in the UI
+
+
+## 🔮 Future Enhancements
+
+- Vector database integration (FAISS / Pinecone)
+- Semantic search over uploaded documents
+- Multi-document summarization support
+- Citation-aware and reference-linked summaries
+- User authentication and history tracking
+- Cloud deployment (AWS / GCP / Azure)
+
 

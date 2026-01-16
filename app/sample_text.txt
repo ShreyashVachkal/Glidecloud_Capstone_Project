@@ -1,0 +1,9 @@
+Machine learning has become a critical tool in modern data-driven applications.
+This research explores the use of supervised learning models to predict student
+career pathways based on expected salary, work-life balance, and job satisfaction.
+The study uses survey data collected from undergraduate students and applies
+regression and classification techniques to identify trends.
+
+The methodology includes data preprocessing, feature engineering, and model
+evaluation using accuracy and F1-score. Results indicate that expected salary
+and work-life balance are strong predictors of career preference.

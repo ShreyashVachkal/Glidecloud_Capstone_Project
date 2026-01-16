@@ -1,0 +1,61 @@
+# -----------------------------
+# Core Framework Dependencies
+# -----------------------------
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-multipart
+
+# -----------------------------
+# Streamlit Frontend
+# -----------------------------
+streamlit
+
+# -----------------------------
+# LangChain & RAG Dependencies
+# -----------------------------
+langchain
+langchain-community
+langchain-openai
+langchain-core
+
+# -----------------------------
+# Vector Store
+# -----------------------------
+chromadb
+
+# -----------------------------
+# Embeddings & LLM
+# -----------------------------
+openai
+sentence-transformers
+tiktoken
+
+# -----------------------------
+# Document Loaders
+# -----------------------------
+pypdf2
+unstructured
+python-magic
+python-docx
+
+# -----------------------------
+# Utilities
+# -----------------------------
+python-dotenv
+structlog
+aiofiles
+httpx
+
+# -----------------------------
+# Rate Limiting & Middleware
+# -----------------------------
+slowapi
+python-jose[cryptography]
+
+# -----------------------------
+# Testing (Optional)
+# -----------------------------
+pytest
+pytest-asyncio
